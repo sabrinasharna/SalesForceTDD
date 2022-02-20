@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-20T18:14:01 EST" name="Default suite" finished-at="2022-02-20T18:14:08 EST" duration-ms="6976">
+    <groups>
+    </groups>
+    <test started-at="2022-02-20T18:14:01 EST" name="Default test" finished-at="2022-02-20T18:14:08 EST" duration-ms="6976">
+      <class name="com.SalesForceLoginTests.NegativeLoginTest">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:01 EST" name="openApp" finished-at="2022-02-20T18:14:07 EST" duration-ms="5881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="getTitleTest()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:07 EST" name="getTitleTest" finished-at="2022-02-20T18:14:07 EST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitleTest -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:07 EST" name="openApp" finished-at="2022-02-20T18:14:07 EST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="userNameButton()[pri:1, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:07 EST" name="userNameButton" finished-at="2022-02-20T18:14:08 EST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userNameButton -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="openApp" finished-at="2022-02-20T18:14:08 EST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="passwordButton()[pri:2, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="passwordButton" finished-at="2022-02-20T18:14:08 EST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordButton -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="openApp" finished-at="2022-02-20T18:14:08 EST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="signinButton()[pri:3, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="signinButton" finished-at="2022-02-20T18:14:08 EST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinButton -->
+      </class> <!-- com.SalesForceLoginTests.NegativeLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
