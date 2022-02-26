@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SalesForceLoginTests.NegativeLoginTest">
+      <class name="com.SalesForceRegistrationTest.RegistrationTest">
         <methods>
-          <include name="signinButton"/>
+          <include name="tearDown"/>
           <include name="openApp"/>
+          <include name="RegistrationTest1"/>
         </methods>
-      </class> <!-- com.SalesForceLoginTests.NegativeLoginTest -->
+      </class> <!-- com.SalesForceRegistrationTest.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

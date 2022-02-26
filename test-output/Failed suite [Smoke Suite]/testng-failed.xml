@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Smoke Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.SalesForceListeners.SalesForceListeners"/>
+  </listeners>
+  <test thread-count="5" name="Login Test(failed)(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.SalesForceLoginTests.NegativeLoginTest">
+        <methods>
+          <include name="homePage"/>
+          <include name="openApp"/>
+          <include name="getTitleTest"/>
+          <include name="teardownTests"/>
+        </methods>
+      </class> <!-- com.SalesForceLoginTests.NegativeLoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Smoke Suite]] -->

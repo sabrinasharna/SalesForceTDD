@@ -1,4 +1,4 @@
-package com.SalesForceLoginPages;
+package com.SalesForcePages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,7 +52,13 @@ public class LoginPage {
 		userlastN.sendKeys(lastName);
 		return userlastN;
 	}
+	public WebElement loginRegression(String enterUname, String enterPaas){
+    this.getUserName(enterUname);
+    this.getPassword(enterPaas);
+    this.getLogin();
+    return this.tryItFree();
 
 
 
+}
 }

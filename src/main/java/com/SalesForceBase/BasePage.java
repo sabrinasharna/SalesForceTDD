@@ -31,6 +31,7 @@ public class BasePage {
 		driverType=FileReadManager.getInstance().getConfigReader().getBrowser();
 		environmentType=FileReadManager.getInstance().getConfigReader().getEnvironment();
 	}
+	
 
 	public WebDriver getDriver() {
 		if(driver == null) driver = createDriver();
