@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="regression Suite">
+<groups>
+	<run>
+		<include name="regression"></include>
+	</run>
+</groups>
+
+
+<listeners>
+	<listener class-name="com.SalesForceListeners.SalesForceListeners"></listener>
+</listeners>
+
+  <test  name="Test">
+    <classes>
+      <class name="com.SalesForceLoginTests.NegativeLoginTest"/>
+      <class name="com.SalesForce.DummyClass"/>
+       <class name="com.SalesForceRegistrationTest.RegistrationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

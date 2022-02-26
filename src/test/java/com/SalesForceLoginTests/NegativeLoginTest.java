@@ -2,72 +2,78 @@ package com.SalesForceLoginTests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.SalesForceBase.BasePage;
-import com.SalesForceLoginPages.LoginPage;
+import com.SalesForcePages.LoginPage;
 
 public class NegativeLoginTest extends BasePage{
-	LoginPage lp;
+	//public LoginPage lp = new LoginPage(getDriver());
 	WebDriver driver;
+	public LoginPage lp ;
 	
-	@BeforeMethod
+	@BeforeTest(groups= {"regression", "smoke"})
 	public void openApp() {
-		driver= getDriver();
+
+		driver=getDriver();
 		String expectedURL = driver.getCurrentUrl();
 		System.out.println("expectedurl" + " " + expectedURL);
 		String actualURL = "https://login.salesforce.com/";
 		Assert.assertEquals(actualURL, expectedURL);
 	
 	}
-	@Test(priority = 0, alwaysRun = true)
+	@Test(priority = 0, groups={"smoke"})
 	public void getTitleTest() {
-		driver= getDriver();
+		
 		String expectedTitle = driver.getTitle();
 		System.out.println("expectedTitle" + " " + expectedTitle);
-		String actualTitle = "Login | Salesforce";
+		String actualTitle = "Login | Salesforce1";
 		Assert.assertEquals(actualTitle, expectedTitle);
 	
 	}
 	
-	@Test(priority=1)
+	
+	@Test(priority=1, groups={"smoke"})
 	public void userNameButton() {
-		 //getDriver();
+		 
 		 lp= new LoginPage(driver);
 		 lp.getUserName("Sabrina");
 	
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, groups={"smoke"})
 	public void passwordButton() {
-		 //getDriver();
+		 
 		 lp= new LoginPage(driver);
 		 lp.getPassword("1234");
 	
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, groups={"smoke"})
 	public void signinButton() {
-		 
-		 lp= new LoginPage(driver);
 		 lp.getLogin();
-		 String expectedURL = driver.getCurrentUrl();
+		 /*String expectedURL = driver.getCurrentUrl();
 			System.out.println("expectedurl" + " " + expectedURL);
 			String actualURL = "https://login.salesforce.com/Sabrina";
-			Assert.assertNotEquals(actualURL, expectedURL);
-		 	
-		 
-		 
-		 
+			Assert.assertNotEquals(actualURL, expectedURL);*/
+		}
 	
+	@Test(priority=4, groups={"regression"})
+	public void loginTest() {
+		 lp= new LoginPage(driver);
+		 lp.loginRegression("Sabrina", "1234");
+		
+	}
+	@Test(priority=5,dependsOnMethods="getTitleTest",groups= {"smoke"})
+	public void homePage() {
+		System.out.println("we will implement it later");
 	}
 	
-	//@AfterTest
+	@AfterTest(groups= {"regression", "smoke"})
 	public void teardownTests() {
 		closeDriver();	
 	}
-	
-	
 
 }

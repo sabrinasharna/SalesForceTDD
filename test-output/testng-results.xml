@@ -1,45 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="20" passed="16" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-20T18:14:01 EST" name="Default suite" finished-at="2022-02-20T18:14:08 EST" duration-ms="6976">
+  <suite started-at="2022-02-25T23:43:18 EST" name="Smoke Suite" finished-at="2022-02-25T23:43:32 EST" duration-ms="14072">
     <groups>
+      <group name="smoke">
+        <method signature="NegativeLoginTest.getTitleTest()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" name="getTitleTest" class="com.SalesForceLoginTests.NegativeLoginTest"/>
+        <method signature="NegativeLoginTest.homePage()[pri:5, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" name="homePage" class="com.SalesForceLoginTests.NegativeLoginTest"/>
+        <method signature="NegativeLoginTest.passwordButton()[pri:2, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" name="passwordButton" class="com.SalesForceLoginTests.NegativeLoginTest"/>
+        <method signature="NegativeLoginTest.signinButton()[pri:3, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" name="signinButton" class="com.SalesForceLoginTests.NegativeLoginTest"/>
+        <method signature="NegativeLoginTest.userNameButton()[pri:1, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" name="userNameButton" class="com.SalesForceLoginTests.NegativeLoginTest"/>
+        <method signature="DummyClass.loginTest()[pri:0, instance:com.SalesForce.DummyClass@41e36e46]" name="loginTest" class="com.SalesForce.DummyClass"/>
+        <method signature="RegistrationTest.chooseCountryDropDpwn()[pri:10, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="chooseCountryDropDpwn" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.chooseEmployeeDropDown()[pri:7, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="chooseEmployeeDropDown" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.companyAgreement()[pri:11, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="companyAgreement" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.companyCountryDropDpwn()[pri:9, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="companyCountryDropDpwn" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.companyEmployeeDropDown()[pri:6, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="companyEmployeeDropDown" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.companyName()[pri:8, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="companyName" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.employeeEmail()[pri:4, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="employeeEmail" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.firstName()[pri:1, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="firstName" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.jobName()[pri:3, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="jobName" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.lastName()[pri:2, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="lastName" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.phoneNumber()[pri:5, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="phoneNumber" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.tryFreeButton()[pri:0, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" name="tryFreeButton" class="com.SalesForceRegistrationTest.RegistrationTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-02-20T18:14:01 EST" name="Default test" finished-at="2022-02-20T18:14:08 EST" duration-ms="6976">
+    <test started-at="2022-02-25T23:43:18 EST" name="Login Test" finished-at="2022-02-25T23:43:23 EST" duration-ms="4875">
       <class name="com.SalesForceLoginTests.NegativeLoginTest">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:01 EST" name="openApp" finished-at="2022-02-20T18:14:07 EST" duration-ms="5881" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:18 EST" name="openApp" finished-at="2022-02-25T23:43:22 EST" duration-ms="3472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="getTitleTest()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:07 EST" name="getTitleTest" finished-at="2022-02-20T18:14:07 EST" duration-ms="22" status="PASS">
+        <test-method signature="getTitleTest()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:22 EST" name="getTitleTest" finished-at="2022-02-25T23:43:22 EST" duration-ms="20" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Login | Salesforce] but found [Login | Salesforce1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Login | Salesforce] but found [Login | Salesforce1]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.SalesForceLoginTests.NegativeLoginTest.getTitleTest(NegativeLoginTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitleTest -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:07 EST" name="openApp" finished-at="2022-02-20T18:14:07 EST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="userNameButton()[pri:1, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:07 EST" name="userNameButton" finished-at="2022-02-20T18:14:08 EST" duration-ms="547" status="PASS">
+        <test-method signature="userNameButton()[pri:1, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:22 EST" name="userNameButton" finished-at="2022-02-25T23:43:22 EST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userNameButton -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="openApp" finished-at="2022-02-20T18:14:08 EST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="passwordButton()[pri:2, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="passwordButton" finished-at="2022-02-20T18:14:08 EST" duration-ms="156" status="PASS">
+        <test-method signature="passwordButton()[pri:2, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:22 EST" name="passwordButton" finished-at="2022-02-25T23:43:22 EST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordButton -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="openApp" finished-at="2022-02-20T18:14:08 EST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="signinButton()[pri:3, instance:com.SalesForceLoginTests.NegativeLoginTest@48e4374]" started-at="2022-02-20T18:14:08 EST" name="signinButton" finished-at="2022-02-20T18:14:08 EST" duration-ms="266" status="PASS">
+        <test-method signature="signinButton()[pri:3, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:22 EST" name="signinButton" finished-at="2022-02-25T23:43:23 EST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signinButton -->
+        <test-method signature="homePage()[pri:5, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:23 EST" name="homePage" finished-at="2022-02-25T23:43:23 EST" depends-on-methods="com.SalesForceLoginTests.NegativeLoginTest.getTitleTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NegativeLoginTest.homePage()[pri:5, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NegativeLoginTest.homePage()[pri:5, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method is-config="true" signature="teardownTests()[pri:0, instance:com.SalesForceLoginTests.NegativeLoginTest@703580bf]" started-at="2022-02-25T23:43:23 EST" name="teardownTests" finished-at="2022-02-25T23:43:23 EST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTests -->
       </class> <!-- com.SalesForceLoginTests.NegativeLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+    <test started-at="2022-02-25T23:43:23 EST" name="Login Test1" finished-at="2022-02-25T23:43:25 EST" duration-ms="1782">
+      <class name="com.SalesForce.DummyClass">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForce.DummyClass@41e36e46]" started-at="2022-02-25T23:43:23 EST" name="openApp" finished-at="2022-02-25T23:43:25 EST" duration-ms="1599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="loginTest()[pri:0, instance:com.SalesForce.DummyClass@41e36e46]" started-at="2022-02-25T23:43:25 EST" name="loginTest" finished-at="2022-02-25T23:43:25 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardownTests()[pri:0, instance:com.SalesForce.DummyClass@41e36e46]" started-at="2022-02-25T23:43:25 EST" name="teardownTests" finished-at="2022-02-25T23:43:25 EST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTests -->
+      </class> <!-- com.SalesForce.DummyClass -->
+    </test> <!-- Login Test1 -->
+    <test started-at="2022-02-25T23:43:25 EST" name="Test two" finished-at="2022-02-25T23:43:32 EST" duration-ms="7369">
+      <class name="com.SalesForceRegistrationTest.RegistrationTest">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:25 EST" name="openApp" finished-at="2022-02-25T23:43:27 EST" duration-ms="1808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tryFreeButton()[pri:0, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:27 EST" name="tryFreeButton" finished-at="2022-02-25T23:43:27 EST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tryFreeButton -->
+        <test-method signature="firstName()[pri:1, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:27 EST" name="firstName" finished-at="2022-02-25T23:43:29 EST" duration-ms="1415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstName -->
+        <test-method signature="lastName()[pri:2, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:29 EST" name="lastName" finished-at="2022-02-25T23:43:30 EST" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastName -->
+        <test-method signature="jobName()[pri:3, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:30 EST" name="jobName" finished-at="2022-02-25T23:43:30 EST" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobName -->
+        <test-method signature="employeeEmail()[pri:4, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:30 EST" name="employeeEmail" finished-at="2022-02-25T23:43:31 EST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeEmail -->
+        <test-method signature="phoneNumber()[pri:5, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:31 EST" name="phoneNumber" finished-at="2022-02-25T23:43:31 EST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneNumber -->
+        <test-method signature="companyEmployeeDropDown()[pri:6, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:31 EST" name="companyEmployeeDropDown" finished-at="2022-02-25T23:43:31 EST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companyEmployeeDropDown -->
+        <test-method signature="chooseEmployeeDropDown()[pri:7, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:31 EST" name="chooseEmployeeDropDown" finished-at="2022-02-25T23:43:31 EST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseEmployeeDropDown -->
+        <test-method signature="companyName()[pri:8, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:31 EST" name="companyName" finished-at="2022-02-25T23:43:32 EST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companyName -->
+        <test-method signature="companyCountryDropDpwn()[pri:9, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:32 EST" name="companyCountryDropDpwn" finished-at="2022-02-25T23:43:32 EST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companyCountryDropDpwn -->
+        <test-method signature="chooseCountryDropDpwn()[pri:10, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:32 EST" name="chooseCountryDropDpwn" finished-at="2022-02-25T23:43:32 EST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseCountryDropDpwn -->
+        <test-method signature="companyAgreement()[pri:11, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:32 EST" name="companyAgreement" finished-at="2022-02-25T23:43:32 EST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companyAgreement -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SalesForceRegistrationTest.RegistrationTest@68999068]" started-at="2022-02-25T23:43:32 EST" name="tearDown" finished-at="2022-02-25T23:43:32 EST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SalesForceRegistrationTest.RegistrationTest -->
+    </test> <!-- Test two -->
+  </suite> <!-- Smoke Suite -->
 </testng-results>
